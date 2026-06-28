@@ -1,0 +1,134 @@
+/* Background halaman */
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg,#ffd6e8,#ffeef5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+    overflow:hidden;
+}
+
+/* Kotak utama */
+.container{
+    width:90%;
+    max-width:700px;
+
+    background:white;
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    position:relative;
+    z-index:10;
+}
+
+/* Judul */
+h1{
+    color:#ff3d7f;
+    margin-bottom:20px;
+}
+
+/* Foto */
+.foto{
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid pink;
+
+    margin-bottom:25px;
+}
+
+/* Tombol */
+button{
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff4d88;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Efek ketika disentuh mouse */
+button:hover{
+
+    background:#ff1f68;
+
+    transform:scale(1.08);
+
+}
+
+/* Isi surat */
+#surat{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+/* Disembunyikan */
+.hidden{
+    display:none;
+}
+
+/* Hati yang bergerak */
+.heart{
+
+    position:absolute;
+
+    color:red;
+
+    font-size:20px;
+
+    animation:jatuh 8s linear infinite;
+
+}
+
+/* Animasi */
+@keyframes jatuh{
+
+    0%{
+
+        transform:translateY(-100vh);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(100vh);
+
+        opacity:0;
+
+    }
+
+}

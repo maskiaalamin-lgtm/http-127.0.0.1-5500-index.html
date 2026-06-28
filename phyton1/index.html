@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Sayang ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hati yang akan dibuat bergerak dengan JavaScript -->
+    <div id="hearts"></div>
+
+    <!-- Isi Website -->
+    <div class="container">
+
+        <h1>💖 Untuk Sayangku 💖</h1>
+
+        <img src="ptr.jpeg" alt="Foto Kita" class="foto">
+
+        <button id="btnSurat" onclick="bukaSurat()">
+            ❤️ Buka Surat ❤️
+        </button>
+
+        <div id="surat" class="hidden">
+            <p id="teks"></p>
+
+            <button onclick="putarMusik()">
+                🎵 Putar Musik
+            </button>
+        </div>
+
+    </div>
+
+    <audio id="musik">
+        <source src="nyaman.mp3.mpeg" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
